@@ -3,5 +3,11 @@
 
 # Energy Saver to not sleep
 
+sudo pmset sleep 0
 
 # Enable ARD for all admins
+
+
+/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users admin -privs -all -restart -agent -menu
+
+
